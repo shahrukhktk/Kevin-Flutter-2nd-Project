@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:kevinflutterapp2/screens/screen_two.dart';
+import 'package:kevinflutterapp2/screens/aftonbladet_screen.dart';
+import 'package:kevinflutterapp2/screens/expressen_screen.dart';
+import 'package:kevinflutterapp2/screens/svenskadagbladet_screen.dart';
+import 'package:kevinflutterapp2/screens/svt_nyheter_screen.dart';
 
 class FirstScreen extends StatefulWidget {
   @override
@@ -40,7 +43,7 @@ class _FirstScreenState extends State<FirstScreen> {
                     onTap: ()
                     {
                       Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => SecondScreen()),);
+                        MaterialPageRoute(builder: (context) => AftonbladetScreen()),);
                     },
                     child: Image(
                       image: AssetImage('images/gridone.png',),
@@ -50,7 +53,8 @@ class _FirstScreenState extends State<FirstScreen> {
                   GestureDetector(
                     onTap: ()
                     {
-
+                      Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ExpressenScreen()),);
                     },
                     child: Image(
                       image: AssetImage('images/gridtwo.png',),
@@ -69,7 +73,8 @@ class _FirstScreenState extends State<FirstScreen> {
                   GestureDetector(
                     onTap: ()
                     {
-
+                      Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => SvenskaDagbladetScreen()),);
                     },
                     child: Image(
                       image: AssetImage('images/gridthree.png',),
@@ -79,7 +84,8 @@ class _FirstScreenState extends State<FirstScreen> {
                   GestureDetector(
                     onTap: ()
                     {
-
+                      Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => SvtNyheterScreen()),);
                     },
                     child: Image(
                       image: AssetImage('images/gridfour.png',),

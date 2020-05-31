@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:kevinflutterapp2/screens/screen_one.dart';
 
-class SecondScreen extends StatefulWidget {
+class ExpressenScreen extends StatefulWidget {
   @override
-  _SecondScreenState createState() => _SecondScreenState();
+  _ExpressenScreenState createState() => _ExpressenScreenState();
 }
 
-class _SecondScreenState extends State<SecondScreen> {
+class _ExpressenScreenState extends State<ExpressenScreen> {
   @override
   Widget build(BuildContext context) {
 
@@ -27,7 +27,7 @@ class _SecondScreenState extends State<SecondScreen> {
               ),
               SizedBox(width: 50,),
               Center(
-                child: Text('Aftonbladet',
+                child: Text('Expressen',
                   style: TextStyle(
                     fontSize: 18.0, color: Colors.black, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat',
                   ),),
@@ -73,25 +73,12 @@ class _SecondScreenState extends State<SecondScreen> {
                   ),
                   Center(
                       child: Image(
-                        image: AssetImage('images/img_one.png'),
+                        image: AssetImage('images/img_two.png'),
                         height: 120,
                       ),
                   ),
                   SizedBox(height: 20,),
-                  Container(
-                    height: 40,
-                    width: 180,
-                    child: Card(
-                      elevation: 2,
-                      color: Color.fromARGB(215, 114, 137, 218),
-                        child: Center(
-                          child: Text('@Nameofsource',
-                            style: TextStyle(
-                              fontSize: 12.0, color: Colors.white, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat',
-                            ),),
-                        ),
-                    ),
-                  ),
+
                   SizedBox(height: 50,),
                   Align(
                     alignment: Alignment.center,
