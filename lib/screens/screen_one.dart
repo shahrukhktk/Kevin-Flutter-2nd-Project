@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:kevinflutterapp2/screens/screen_two.dart';
-import 'package:kevinflutterapp2/widgets/gridviewWidget.dart';
 
 class FirstScreen extends StatefulWidget {
   @override
@@ -40,7 +39,8 @@ class _FirstScreenState extends State<FirstScreen> {
                   GestureDetector(
                     onTap: ()
                     {
-
+                      Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => SecondScreen()),);
                     },
                     child: Image(
                       image: AssetImage('images/gridone.png',),

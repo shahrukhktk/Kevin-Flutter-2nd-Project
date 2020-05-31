@@ -17,6 +17,7 @@ class _SecondScreenState extends State<SecondScreen> {
         children: <Widget>[
           SizedBox(height: 30,),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               IconButton(icon: Icon(Icons.chevron_left, size: 35, color: Colors.grey[800],),
               onPressed: ()
@@ -24,6 +25,14 @@ class _SecondScreenState extends State<SecondScreen> {
                   Navigator.pop(context);
                 },
               ),
+              SizedBox(width: 50,),
+              Center(
+                child: Text('Aftonbladet',
+                  style: TextStyle(
+                    fontSize: 18.0, color: Colors.black, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat',
+                  ),),
+              ),
+              SizedBox(width: 100,),
             ],
           ),
           SizedBox(height: 20,),
@@ -64,7 +73,7 @@ class _SecondScreenState extends State<SecondScreen> {
                   ),
                   Center(
                       child: Image(
-                        image: AssetImage('images/profileimage.png'),
+                        image: AssetImage('images/img_one.png'),
                         height: 120,
                       ),
                   ),
